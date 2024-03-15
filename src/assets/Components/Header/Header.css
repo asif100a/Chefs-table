@@ -1,0 +1,11 @@
+.navber-list-container li:hover{
+    cursor: pointer;
+    background-color: #1d1d;
+    color: white;
+}
+.navber-list-container li{
+    padding: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 6px;
+}
