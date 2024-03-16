@@ -14,33 +14,59 @@ const Carts = props => {
 
     return (
         <div>
-            <div className='text-center mx-auto mt-20'>
+            <div className='text-center mx-auto mt-24'>
                 <h1 className='text-4xl font-semibold'>Our Recipes</h1>
-                <p className='text-lg font-normal w-[48em] mx-auto'>In a world where food is more than just sustenance but a celebration of culture, community, and creativity, Our Recipes stands as a testament to the universal language of gastronomy. </p>
+                <p className='text-lg font-normal w-auto lg:w-[48em] mx-auto'>In a world where food is more than just sustenance but a celebration of culture, community, and creativity, Our Recipes stands as a testament to the universal language of gastronomy. </p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-                {
-                    carts.map(cart => <Cart cart={cart}></Cart>)
-                }
-            </div>
-            <div>
-                <div>
-                    <h3>Want to cook: </h3>
+            <div className='flex gap-6'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center mt-16'>
+                    {
+                        carts.map(cart => <Cart key={cart.id} cart={cart}></Cart>)
+                    }
                 </div>
+                <div className='border-2 w-[25rem] h-fit px-6 rounded-2xl mt-16'>
+                    <div className='mt-6'>
+                        <h3 className='text-xl font-semibold'>Want to cook: </h3>
+                        <hr className='my-3' />
+                    </div>
+                    <div>
+                        <table className='text-[#28282899]'>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Time</th>
+                                    <th>Calories</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
 
-                <div>
-                    <h3>Currently cooking: 02</h3>
-                </div>
+                    <div className='mt-6'>
+                        <h3 className='text-xl font-semibold'>Currently cooking: </h3>
+                        <hr className='my-3' />
+                    </div>
+                    <div>
+                        <table className='text-[#28282899]'>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Time</th>
+                                    <th>Calories</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
 
-                <div>
-                    <p>Total Time =
-                        45 minutes
-                    </p>
+                    <div>
+                        <p>Total Time =
+                            45 minutes
+                        </p>
 
-                    <p>Total Calories =
-                        1050 calories
-                    </p>
+                        <p>Total Calories =
+                            1050 calories
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
