@@ -3,7 +3,7 @@ import TimeIcon from '../../Images/clock.png';
 import Calories from '../../Images/calories.png';
 
 const Cart = ({ cart, handleOrderFood }) => {
-    // console.log(handleOrderFood)
+
     const { recipe_image, recipe_name, short_description, recipe_id, preparing_time, calories, ingredients } = cart;
     const [first, second, third, forth, fifth] = ingredients;
     return (
