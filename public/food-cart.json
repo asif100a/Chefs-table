@@ -1,0 +1,111 @@
+[
+    {
+      "recipe_image": "https://i.ibb.co/VDHxgN2/simple-chicken-curry-hero.webp",
+      "recipe_id": "001",
+      "recipe_name": "Spicy Chicken Curry",
+      "short_description": "A flavorful and aromatic chicken curry with a spicy kick.",
+      "ingredients": ["550 g chicken", "120 ml coconut milk", "200 g tomatoes", "100 g onions", "50 g ginger", "3 cloves garlic"],
+      "preparing_time": "45 min",
+      "calories": "380 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/QCGsky1/pasta-primavera.jpg",
+      "recipe_id": "002",
+      "recipe_name": "Pasta Primavera",
+      "short_description": "A colorful and vibrant pasta dish loaded with seasonal vegetables.",
+      "ingredients": ["300 g penne pasta", "200 g cherry tomatoes", "150 g broccoli florets", "100 g bell peppers", "1 zucchini", "2 cloves garlic"],
+      "preparing_time": "25 min",
+      "calories": "320 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/JnpZ1BF/Vegetable-stir-fry-b669c05.jpg",
+      "recipe_id": "003",
+      "recipe_name": "Vegetable Stir-Fry",
+      "short_description": "A quick and healthy stir-fry packed with crunchy vegetables.",
+      "ingredients": ["300 g mixed vegetables (carrots, bell peppers, snap peas)", "150 g tofu", "100 g mushrooms", "50 g onions", "2 tbsp soy sauce"],
+      "preparing_time": "20 min",
+      "calories": "250 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/kGmcJkp/pcc-rosemary-grilled-salmon-flo.jpg",
+      "recipe_id": "004",
+      "recipe_name": "Grilled Salmon with Lemon Herb Butter",
+      "short_description": "Tender and succulent grilled salmon fillets topped with zesty lemon herb butter.",
+      "ingredients": ["4 salmon fillets", "100 g butter", "1 lemon", "2 cloves garlic", "50 g fresh herbs (parsley, dill, chives)"],
+      "preparing_time": "15 min",
+      "calories": "300 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/jr7vr6N/Caprese-Salad-Recipe.jpg",
+      "recipe_id": "005",
+      "recipe_name": "Caprese Salad",
+      "short_description": "A classic Italian salad featuring ripe tomatoes, fresh mozzarella, and fragrant basil leaves.",
+      "ingredients": ["200 g cherry tomatoes", "150 g fresh mozzarella", "100 g fresh basil leaves", "2 tbsp balsamic vinegar", "2 tbsp extra virgin olive oil"],
+      "preparing_time": "10 min",
+      "calories": "180 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/bFps2p1/peanut-butter-banana-smoothie-feaature-1024x1024.jpg",
+      "recipe_id": "006",
+      "recipe_name": "Banana Berry Smoothie",
+      "short_description": "A creamy and refreshing smoothie bursting with the goodness of bananas and mixed berries.",
+      "ingredients": ["2 ripe bananas", "100 g mixed berries (strawberries, blueberries, raspberries)", "200 ml almond milk", "2 tbsp honey", "Ice cubes (optional)"],
+      "preparing_time": "5 min",
+      "calories": "200 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/30y4tXm/istockphoto-501125914-612x612.jpg",
+      "recipe_id": "007",
+      "recipe_name": "Decadent Chocolate Cake",
+      "short_description": "Indulge in the rich and moist goodness of this decadent chocolate cake, perfect for any occasion.",
+      "ingredients": ["200 g all-purpose flour", "150 g sugar", "100 g butter", "3 eggs", "50 g cocoa powder", "1 tsp vanilla extract"],
+      "preparing_time": "60 min",
+      "calories": "400 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/T1JTnjq/What-is-a-Dynamite-Roll.jpg",
+      "recipe_id": "008",
+      "recipe_name": "California Sushi Roll",
+      "short_description": "Experience the flavors of Japan with this delicious California sushi roll filled with crab, avocado, and cucumber.",
+      "ingredients": ["200 g sushi rice", "100 g crab meat", "1 avocado", "1 cucumber", "4 nori seaweed sheets", "Soy sauce and wasabi for serving"],
+      "preparing_time": "35 min",
+      "calories": "320 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/bKzGBWC/download.jpg",
+      "recipe_id": "009",
+      "recipe_name": "Tex-Mex Taco Salad",
+      "short_description": "Enjoy the bold flavors of Tex-Mex cuisine with this hearty taco salad topped with salsa, guacamole, and sour cream.",
+      "ingredients": ["300 g ground beef", "150 g lettuce", "100 g cherry tomatoes", "50 g cheddar cheese", "2 tbsp taco seasoning", "Tortilla chips for serving"],
+      "preparing_time": "30 min",
+      "calories": "350 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/6bvHkWV/Stretch-Ratatouille.jpg",
+      "recipe_id": "010",
+      "recipe_name": "Ratatouille",
+      "short_description": "A classic French Provencal stewed vegetable dish packed with the flavors of summer.",
+      "ingredients": ["300 g eggplant", "200 g zucchini", "150 g bell peppers", "100 g tomatoes", "2 cloves garlic", "2 tbsp olive oil"],
+      "preparing_time": "40 min",
+      "calories": "220 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/gWDDTmG/pancakes-berries-maple-syrup-260nw-365501507.webp",
+      "recipe_id": "011",
+      "recipe_name": "Fluffy Pancakes",
+      "short_description": "Start your day right with these fluffy pancakes served with maple syrup and fresh berries.",
+      "ingredients": ["200 g all-purpose flour", "150 ml milk", "2 eggs", "2 tbsp sugar", "1 tsp baking powder", "Butter for frying"],
+      "preparing_time": "20 min",
+      "calories": "280 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co/BzW5fg5/avocado-toast.webp",
+      "recipe_id": "012",
+      "recipe_name": "Avocado Toast",
+      "short_description": "A simple yet satisfying avocado toast topped with mashed avocado, cherry tomatoes, and a sprinkle of sea salt.",
+      "ingredients": ["2 slices whole grain bread", "1 ripe avocado", "50 g cherry tomatoes", "1 tbsp lemon juice", "Salt and pepper to taste"],
+      "preparing_time": "10 min",
+      "calories": "220 calories"
+    }
+  ]
+  
