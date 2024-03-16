@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import TimeIcon from '../../Images/clock.png';
 import Calories from '../../Images/calories.png';
 
-const Cart = ({ cart }) => {
-    console.log(cart)
+const Cart = ({ cart, handleOrderFood }) => {
+    // console.log(handleOrderFood)
     const { recipe_image, recipe_name, short_description, recipe_id, preparing_time, calories, ingredients } = cart;
     const [first, second, third, forth, fifth] = ingredients;
     return (
@@ -35,7 +35,10 @@ const Cart = ({ cart }) => {
                             </p>
                         </div>
                         <div className="card-actions justify-start mt-3">
-                            <button className="btn bg-green-500 text-lg font-medium text-white">Want to Cook</button>
+                            <button
+                                onClick={() => handleOrderFood(cart)}
+                                className="btn bg-green-500 text-lg font-medium text-white">Want to Cook
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -45,7 +48,8 @@ const Cart = ({ cart }) => {
 };
 
 Cart.propTypes = {
-    cart: PropTypes.array.isRequired
+    cart: PropTypes.object.isRequired,
+    handleOrderFood: PropTypes.func.isRequired
 };
 
 export default Cart;
