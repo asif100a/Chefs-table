@@ -14,7 +14,7 @@ const Cart = ({ cart }) => {
                     <div className="card-body">
                         <h2 className="card-title font-semibold text-2xl min-h-16 h-16">{recipe_name}</h2>
                         <p className='min-h-20 h-20'>{short_description}</p>
-                        <hr />
+                        <hr className='mt-3 lg:mt-auto' />
                         <h5 className='text-xl font-semibold'>Ingredients: 6</h5>
                         <ul className='list-disc ml-8 min-h-36 h-36'>
                             <li>{first}</li>
