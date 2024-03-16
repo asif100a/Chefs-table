@@ -5,16 +5,17 @@ import Header from './assets/Components/Header/Header'
 
 function App() {
 
-  const [order, setOrder] = useState([]);
+  const [orders, setOrders] = useState([]);
 
   const handleOrderFood = (items) => {
-    console.log(items);
+    const newOrders = [...orders, items];
+    setOrders(newOrders);
   };
 
   return (
     <>
       <Header></Header>
-      <Carts handleOrderFood={handleOrderFood}></Carts>
+      <Carts handleOrderFood={handleOrderFood} orders={orders}></Carts>
     </>
   )
 }
