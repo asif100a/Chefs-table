@@ -17,7 +17,7 @@ function App() {
     const newOrders = [...orders, items];
     const isExist = orders.find(item => item.recipe_id === items.recipe_id);
     if (isExist) {
-      toast.warn("This food already exist on the list!");
+      toast.error("This food already exist on the list!");
     }
     else {
       setOrders(newOrders);
@@ -38,6 +38,7 @@ function App() {
     
     const updateOrderList = orders.filter(item => item.recipe_id !== id);
     setOrders(updateOrderList);
+    toast.info('Food is preparing to cook');
   };
 
   return (
