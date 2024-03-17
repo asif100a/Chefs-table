@@ -4,8 +4,8 @@ import Cart from '../Cart/Cart';
 import DisplayOrder from '../DisplayOrder/DisplayOrder';
 import CurrentlyCooking from '../CurrentlyCooking/CurrentlyCooking';
 
-const Carts = ({ handleOrderFood, orders, handleCookingFood, cookings }) => {
-    // console.log(cookings)
+const Carts = ({ handleOrderFood, orders, handleCookingFood, cookings, totalTime, totalCalories }) => {
+    console.log(cookings)
     const [carts, setCarts] = useState([]);
 
     useEffect(() => {
@@ -61,11 +61,11 @@ const Carts = ({ handleOrderFood, orders, handleCookingFood, cookings }) => {
                         <hr className='my-3' />
                     </div>
                     <div>
-                            <div className='flex gap-3 ml-8 font-bold text-[#28282899]'>
-                                <h5>Name</h5>
-                                <h5 className='ml-[70px] mr-12'>Time</h5>
-                                <h5>Calories</h5>
-                            </div>
+                        <div className='flex gap-3 ml-8 font-bold text-[#28282899]'>
+                            <h5>Name</h5>
+                            <h5 className='ml-[70px] mr-12'>Time</h5>
+                            <h5>Calories</h5>
+                        </div>
                         <table className='text-[#28282899]'>
                             <tbody>
                                 {
@@ -81,11 +81,11 @@ const Carts = ({ handleOrderFood, orders, handleCookingFood, cookings }) => {
 
                     <div className='flex justify-end gap-3 pt-4 pb-6'>
                         <p>Total Time = <br />
-                            45 minutes
+                            {totalTime} minutes
                         </p>
 
                         <p>Total Calories = <br />
-                            1050 calories
+                            {totalCalories} calories
                         </p>
                     </div>
                 </div>

@@ -16,7 +16,8 @@ const CurrentlyCooking = ({ cooking, idx }) => {
 };
 
 CurrentlyCooking.propTypes = {
-
+    cooking: PropTypes.object.isRequired,
+    idx: PropTypes.number.isRequired
 };
 
 export default CurrentlyCooking;

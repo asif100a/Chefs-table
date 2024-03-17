@@ -10,6 +10,8 @@ function App() {
 
   const [orders, setOrders] = useState([]);
   const [cookings, setCookings] = useState([]);
+  const [totalTime, setTotalTime] = useState([0]);
+  const [totalCalories, setTotalCalories] = useState([0]);
 
   const handleOrderFood = (items) => {
     const newOrders = [...orders, items];
@@ -23,10 +25,16 @@ function App() {
     }
   };
 
-  const handleCookingFood = (order, id) => {
+  const handleCookingFood = (order, id, time, calories) => {
     const newCookings = [...cookings, order]
     setCookings(newCookings);
-    console.log(id)
+    
+// console.log('time:', time, 'calories:', calories);.
+    // console.log(time)
+    const newTotalTime = [parseInt(...totalTime) + time];
+    setTotalTime(newTotalTime);
+    const newTotalCalories = [parseInt(...totalCalories) + calories];
+    setTotalCalories(newTotalCalories);
     
     const updateOrderList = orders.filter(item => item.recipe_id !== id);
     setOrders(updateOrderList);
@@ -40,6 +48,8 @@ function App() {
         orders={orders}
         handleCookingFood={handleCookingFood}
         cookings={cookings}
+        totalTime={totalTime}
+        totalCalories={totalCalories}
       ></Carts>
       <ToastContainer />
     </>
