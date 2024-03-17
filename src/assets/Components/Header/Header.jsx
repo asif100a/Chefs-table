@@ -5,7 +5,7 @@ import ContactIcon from '../../Images/support.png';
 const Header = () => {
     return (
         <div>
-            <div>
+            <div className="mt-4">
                 <div className="navbar bg-base-100">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -25,11 +25,12 @@ const Header = () => {
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="flex gap-12  navber-list-container">
-                            <li className="tooltip"><a>Home</a></li>
+                            <li id="tooltip" className="tooltip"><a>Home</a></li>
                             <li className="tooltip"><a>Recipes</a></li>
                             <li className="tooltip"><a>About</a></li>
                             <li className="tooltip"><a>Search</a></li>
                         </ul>
+                            <span id="tooltipText">Home</span>
                     </div>
                     <div className="navbar-end items-center space-x-4">
                         <div className="border-2 flex justify-center items-center gap-2 rounded-full pl-6">
@@ -44,8 +45,8 @@ const Header = () => {
             </div>
 
             {/* Banner Section */}
-            <div className="banner-img text-white text-center space-y-2 lg:space-y-12 rounded-3xl mt-16">
-                <div className="banner-img bg-gradient-to-r from-[#312f2f] to-[#48484466] text-white text-center space-y-3 lg:space-y-12 p-0 py-4 lg:p-32 rounded-3xl mt-16">
+            <div className="banner-img text-white text-center space-y-2 lg:space-y-12 rounded-3xl mt-10">
+                <div className="banner-img bg-gradient-to-r from-[#312f2f] to-[#48484466] text-white text-center space-y-3 lg:space-y-12 p-0 py-4 lg:p-32 rounded-3xl mt-10">
                     <h1 className="text-2xl lg:text-5xl font-bold w-auto lg:w-[16em] mx-auto">Discover an exceptional cooking class tailored for you!</h1>
                     <p className="text-lg font-normal w-auto lg:w-[48em] mx-auto">Cooking classes and Culinary Education  have evolved into dynamic experiences that not only teach culinary skills but also drive revenue generation, foster community, and eventually brand building.</p>
                     <div className="flex flex-col lg:flex-row gap-2 lg:gap-5 justify-center w-fit mx-auto">

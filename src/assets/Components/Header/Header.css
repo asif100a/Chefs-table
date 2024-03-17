@@ -18,13 +18,19 @@
 }
 
 
-.tooltip {
+
+#tooltip {
     position: relative;
     display: inline-block;
 }
 
-
-
+#tooltipText{
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 38.7%;
+    border: 2px solid blue;
+}
 
 
 @media screen and (max-width: 550px) {

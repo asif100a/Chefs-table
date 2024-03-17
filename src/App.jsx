@@ -4,6 +4,7 @@ import Carts from './assets/Components/Carts/Carts'
 import Header from './assets/Components/Header/Header'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './assets/Components/Footer/Footer';
 
 
 function App() {
@@ -28,14 +29,14 @@ function App() {
   const handleCookingFood = (order, id, time, calories) => {
     const newCookings = [...cookings, order]
     setCookings(newCookings);
-    
-// console.log('time:', time, 'calories:', calories);.
+
+    // console.log('time:', time, 'calories:', calories);.
     // console.log(time)
     const newTotalTime = [parseInt(...totalTime) + time];
     setTotalTime(newTotalTime);
     const newTotalCalories = [parseInt(...totalCalories) + calories];
     setTotalCalories(newTotalCalories);
-    
+
     const updateOrderList = orders.filter(item => item.recipe_id !== id);
     setOrders(updateOrderList);
     toast.info('Food is preparing to cook');
@@ -43,16 +44,23 @@ function App() {
 
   return (
     <>
-      <Header></Header>
-      <Carts
-        handleOrderFood={handleOrderFood}
-        orders={orders}
-        handleCookingFood={handleCookingFood}
-        cookings={cookings}
-        totalTime={totalTime}
-        totalCalories={totalCalories}
-      ></Carts>
-      <ToastContainer />
+      <header className='w-[80%] mx-auto'>
+        <Header></Header>
+      </header>
+      <main className='w-[80%] mx-auto'>
+        <Carts
+          handleOrderFood={handleOrderFood}
+          orders={orders}
+          handleCookingFood={handleCookingFood}
+          cookings={cookings}
+          totalTime={totalTime}
+          totalCalories={totalCalories}
+        ></Carts>
+        <ToastContainer />
+      </main>
+      <footer className='w-full mt-24'>
+        <Footer></Footer>
+      </footer>
     </>
   )
 }
