@@ -23,10 +23,13 @@ function App() {
     }
   };
 
-  const handleCookingFood = (order) => {
+  const handleCookingFood = (order, id) => {
     const newCookings = [...cookings, order]
     setCookings(newCookings);
-    // console.log(order)
+    console.log(id)
+    
+    const updateOrderList = orders.filter(item => item.recipe_id !== id);
+    setOrders(updateOrderList);
   };
 
   return (

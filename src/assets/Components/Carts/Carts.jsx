@@ -61,12 +61,12 @@ const Carts = ({ handleOrderFood, orders, handleCookingFood, cookings }) => {
                         <hr className='my-3' />
                     </div>
                     <div>
-                        <table className='text-[#28282899]'>
                             <div className='flex gap-3 ml-8 font-bold text-[#28282899]'>
                                 <h5>Name</h5>
                                 <h5 className='ml-[70px] mr-12'>Time</h5>
                                 <h5>Calories</h5>
                             </div>
+                        <table className='text-[#28282899]'>
                             <tbody>
                                 {
                                     cookings.map((cooking, idx) => <CurrentlyCooking
