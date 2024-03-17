@@ -4,7 +4,7 @@ import Calories from '../../Images/calories.png';
 
 const Cart = ({ cart, handleOrderFood }) => {
 
-    const { recipe_image, recipe_name, short_description, recipe_id, preparing_time, calories, ingredients } = cart;
+    const { recipe_image, recipe_name, short_description, preparing_time, calories, ingredients } = cart;
     const [first, second, third, forth, fifth] = ingredients;
     return (
         <div>

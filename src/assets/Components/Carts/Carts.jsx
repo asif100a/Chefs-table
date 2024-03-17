@@ -63,7 +63,7 @@ const Carts = ({ handleOrderFood, orders, handleCookingFood, cookings, totalTime
                     <div>
                         <div className='flex gap-3 ml-8 font-bold text-[#28282899]'>
                             <h5>Name</h5>
-                            <h5 className='ml-[70px] mr-12'>Time</h5>
+                            <h5 className='ml-8 md:ml-[70px] mr-6 md:mr-12'>Time</h5>
                             <h5>Calories</h5>
                         </div>
                         <table className='text-[#28282899]'>
@@ -98,7 +98,9 @@ Carts.propTypes = {
     handleOrderFood: PropTypes.func.isRequired,
     orders: PropTypes.array.isRequired,
     handleCookingFood: PropTypes.func.isRequired,
-    cookings: PropTypes.array.isRequired
+    cookings: PropTypes.array.isRequired,
+    totalTime: PropTypes.number.isRequired,
+    totalCalories: PropTypes.number.isRequired
 };
 
 export default Carts;
