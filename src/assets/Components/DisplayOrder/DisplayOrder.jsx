@@ -12,7 +12,7 @@ const DisplayOrder = ({ order, idx, handleCookingFood }) => {
     // console.log(time)
 
     return (
-        <tr className=''>
+        <tr className='bg-slate-100 border-2 mb-2'>
             <td className=' pr-5'>{idx}</td>
             <td className=''>{recipe_name}</td>
             <td>{preparing_time}</td>

@@ -25,12 +25,11 @@ const Header = () => {
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="flex gap-12  navber-list-container">
-                            <li id="tooltip" className="tooltip"><a>Home</a></li>
+                            <li className="tooltipH"><a>Home</a></li>
                             <li className="tooltip"><a>Recipes</a></li>
                             <li className="tooltip"><a>About</a></li>
                             <li className="tooltip"><a>Search</a></li>
                         </ul>
-                            <span id="tooltipText">Home</span>
                     </div>
                     <div className="navbar-end items-center space-x-4">
                         <div className="border-2 flex justify-center items-center gap-2 rounded-full pl-6">
